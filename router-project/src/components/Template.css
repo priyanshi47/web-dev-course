@@ -1,0 +1,6 @@
+@media (max-width:780px) {
+    .template img{
+        scale: 0;
+    }
+    
+}

@@ -1,0 +1,19 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    background-color: blueviolet;
+    color: azure;
+    padding: 10px;
+    border-radius: 10px;
+    border: 7px solid yellow;
+}
+button{
+    all: unset;
+    background-color: purple;
+    color: antiquewhite;
+    padding: 5px;
+    border-radius: 10px;
+}

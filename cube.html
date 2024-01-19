@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 400px;
+        height: 400px;
+        border: 2px solid black;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 800px;
+        perspective-origin: top right;
+      }
+      .cube {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: cubeRotate 10s linear infinite;
+      }
+
+      @keyframes cubeRotate {
+        from {
+          transform: rotateY(0deg) rotateX(720deg) rotateZ(0deg);
+        }
+        to {
+          transform: rotateY(360deg) rotateX(0deg) rotateZ(360deg);
+        }
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid white;
+        position: absolute;
+      }
+      #front {
+        background-color: red;
+        opacity: 0.7;
+        transform: translateZ(100px);
+      }
+      #top {
+        background-color: aqua;
+        opacity: 0.7;
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      #back {
+        background-color: plum;
+        opacity: 0.7;
+        transform: translateZ(-100px);
+      }
+      #left {
+        background-color: blue;
+        opacity: 0.7;
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      #right {
+        background-color: green;
+        opacity: 0.7;
+        transform: rotateY(-90deg) translateZ(-100px);
+      }
+      #bottom {
+        background-color: yellow;
+        opacity: 0.7;
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cube">
+        <div class="box" id="front"></div>
+        <div class="box" id="top"></div>
+        <div class="box" id="bottom"></div>
+        <div class="box" id="left"></div>
+        <div class="box" id="right"></div>
+        <div class="box" id="back"></div>
+      </div>
+    </div>
+  </body>
+</html>

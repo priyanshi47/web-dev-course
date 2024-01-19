@@ -1,0 +1,33 @@
+.productItem{
+    color: rgb(156, 5, 5);
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    padding:5px 5px;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+.productItem button{
+    height: 50%;
+    align-self: center;
+    background-color: azure;
+    border-radius: 10px;
+    color: blue;
+    cursor: pointer
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: yellow;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44vh;
+
+}

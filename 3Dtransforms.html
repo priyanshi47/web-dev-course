@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: yellow;
+            height: 150px;
+            width: 300px;
+            border: 2px solid;
+            transform: perspective(10px) translateZ(-10px);
+        }
+        .box1{
+            background-color: yellow;
+            height: 150px;
+            width: 300px;
+            border: 2px solid;
+            transform: perspective(10px) translateX(200px) scaleZ(0.5) rotateX(184deg);
+        }
+        .box2{
+            background-color: yellow;
+            height: 150px;
+            width: 300px;
+            border: 2px solid;
+            transform: translateX(10px) translateY(40px) rotateZ(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Translated</div>
+    <div class="box1">Scaled</div>
+    <div class="box2">Rotated</div>
+</body>
+</html>

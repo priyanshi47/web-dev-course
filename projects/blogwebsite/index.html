@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <style>
+      h1 {
+        text-decoration: underline;
+        text-align: center;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 60vw;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 60% 40%;
+
+        gap: 5%;
+      }
+      .grey {
+        color: grey;
+      }
+      .square {
+        border: 2px solid grey;
+      }
+      a {
+        color: rgb(92, 195, 236);
+      }
+      .heading {
+        font-size: x-large;
+        font-weight: 900;
+      }
+      .about {
+        background-color: rgb(225, 221, 221);
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 20%;
+      }
+      .older {
+        border: 2px solid rgb(92, 195, 236);
+        color: rgb(92, 195, 236);
+        border-radius: 15px;
+        padding: 2px;
+      }
+      .newer {
+        border: 2px solid rgb(173, 172, 172);
+        color: rgb(184, 179, 179);
+        border-radius: 15px;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blog Title</h1>
+    <div class="wrapper">
+      <div class="container">
+        <div class="box">
+          <p class="heading">Sample Blog Post</p>
+          <p class="grey">January 1,2014 by <a href="">Mark</a></p>
+          <p>
+            This blog post showsa few different types of content that's
+            supported and styled with bootstarp.Basic typography, images and
+            code are all supported.
+          </p>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="">nulla magnam</a> Reiciendis, sed necessitatibus dolorum
+            quaerat incidunt dolore repellat, magni quibusdam omnis quisquam
+            mollitia aut maiores? Tenetur libero dolore
+          </p>
+          <p class="square">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <b>Maxime aperiam tenetur libero</b> modi doloribus porro ex fugit
+            dolorem, minus adipisci!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            dignissimos omnis dolorum perferendis voluptates distinctio placeat
+            iste. Quia, exercitationem aliquid.
+          </p>
+
+          <p class="heading">Heading</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente
+          iusto in maiores veniam, laboriosam quae voluptates, aliquid minus
+          quod voluptatibus cum sed adipisci velit porro tempora ex eligendi id.
+          <p class="heading">Sub-heading</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae, eveniet.
+          </p>
+          <p class="square">Example Code Block</p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+            dolore aliquid odio adipisci provident consectetur, voluptas debitis
+            saepe ullam rem quo exercitationem veniam quasi porro!
+          </p>
+          <p class="heading">Sub-heading</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo
+            saepe dolorem ipsa rerum voluptatibus laborum doloribus ea
+            accusantium ratione ducimus mollitia nulla, eum, culpa vero
+            explicabo delectus? Minus, ipsam.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet lorem</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
+            fugiat!
+          </p>
+          <ol>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+              quas!
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          </ol>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            recusandae enim perspiciatis dicta. Excepturi, inventore?
+          </p>
+          <span class="older">Older Post</span>
+          <span class="newer">Newer Post</span>
+        </div>
+        <div class="box">
+          <div class="about">
+            <span class="heading" style="font-style: italic">About</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              labore debitis vitae ab accusantium fugiat ut quidem et voluptate
+              quo repellendus qui odit, corrupti non eligendi! Nam voluptatum
+              debitis necessitatibus?
+            </p>
+          </div>
+          <p class="heading" style="font-style: italic">Archives</p>
+
+          <a href=""> March 2014</a> <br />
+          <a href="">February 2014</a> <br />
+          <a href="">January 2014</a> <br />
+          <a href="">December 2013</a> <br />
+          <a href=""> November 2013</a> <br />
+          <a href="">October 2013</a> <br />
+          <a href="">September 2013</a> <br />
+          <a href=""> August 2013</a> <br />
+          <a href="">July 2013</a> <br />
+          <a href=""> June 2013</a> <br />
+          <a href="">May 2013</a> <br />
+          <a href=""> April 2013</a>
+
+          <p class="heading" style="font-style: italic">Elsewhere</p>
+
+          <a href=""> Github</a> <br />
+          <a href="">Twitter</a> <br />
+          <a href=""> Facebook</a> <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

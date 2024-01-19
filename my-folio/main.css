@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes circle1Animate {
+    50% {
+      left: 33%;
+      top: 4%;
+      scale: 1.11;
+    }
+  }
+
+  .circle1{
+    animation: circle1Animate 15s infinite;
+  }
+  @keyframes circle2Animate {
+    50% {
+      bottom: 6%;
+      right: 31%;
+    }
+  }
+
+  .circle2{
+    animation: circle2Animate 8s infinite;
+  }
+
+
+  .modal{
+    scale: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .active{
+   scale: 1;
+   transition: 0.2s ease-in-out;
+   background-color: black;
+   
+   /* background-color: aliceblue; */
+  }
+/* .boxactive{
+ backdrop-filter: blur(20px);
+ transition: none;
+ /* backface-visibility: hidden; 
+} */
+
+  .overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+  }
+.overlayactive{
+ background-color: rgba(74, 73, 73, 0.55);
+  /* backdrop-filter: blur(20px); */
+}
+
+  .fa-facebook:hover{
+     background-color:  white;
+     border-color: blue;
+
+  }
+  .fa-instagram:hover{
+    background-color:  white;
+    border-color: rgb(225, 12, 112);
+
+ }
+ .fa-twitter:hover{
+  background-color:  white;
+  border-color: skyblue;
+
+}
+.fa-snapchat:hover{
+  background-color:  white;
+
+  border-color: yellow;
+
+}
+.fa-telegram:hover{
+  background-color:  white;
+  border-color: skyblue;
+
+}
+
+.blur{
+  backdrop-filter: blur(15px);
+}
+.blurc{
+  opacity: 0.5;
+}
+ 

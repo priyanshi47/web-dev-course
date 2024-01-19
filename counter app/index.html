@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="wrapper flex justify-center items-center h-screen bg-blue-900">
+        <div class="box flex gap-9 flex-col">
+            <div class="head text-sky-200">
+                <h1 class="font-medium text-xl">Increament and Decreament</h1>
+            </div>
+            <div class="butt flex justify-around bg-white h-12">
+                <button id="inc" onclick="incr()" >+</button>
+                <span id="val" class="border-x-2 w-28 text-center items-center flex justify-center">0</span>
+                <button id="dec" onclick="decr()">-</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>

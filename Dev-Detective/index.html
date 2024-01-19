@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <p>Dev Detective</p>
+        <p data-theme-text></p>
+
+        <button class="dark-theme" onclick="dark()">
+          Dark-Theme<i class="fa fa-moon-o" style="font-size: 24px"></i>
+        </button>
+        <button class="lignt-theme" onclick="light()">
+          Light-Theme
+          <i class="fa fa-sun-o" style="font-size: 24px" data-theme-icon></i>
+        </button>
+      </div>
+      <form class="search-container">
+        <i
+          class="fa fa-search"
+          style="font-size: 24px; color: rgba(74, 74, 241, 0.879)"
+        ></i>
+        <input
+          placeholder="Enter Github Username"
+          data-input
+          oninput="myFunction()"
+        />
+        <input type="reset" value="X" class="reset" />
+        <button type="submit">Search</button>
+      </form>
+      <div class="container">
+        <div class="img">
+          <img data-user-img />
+        </div>
+        <div class="content">
+          <div class="name">
+            <p data-name></p>
+            <p data-joinDate></p>
+          </div>
+          <a data-profLink>Go to profile</a>
+
+          <p data-bio></p>
+
+          <div class="parameters">
+            <div class="repos">
+              <p>Repos</p>
+              <p data-repo></p>
+            </div>
+            <div class="followers">
+              <p>Followers</p>
+              <p data-flollower></p>
+            </div>
+            <div class="following">
+              <p>Following</p>
+              <p data-following></p>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="address">
+              <i class="fa fa-map-marker" style="font-size: 24px"></i>
+              <p data-location></p>
+            </div>
+            <div class="blog">
+              <i class="fa fa-link" style="font-size: 24px"></i>
+              <p data-blog></p>
+            </div>
+            <div class="twitter">
+              <i class="fa fa-twitter" style="font-size: 24px"></i>
+              <p data-twitter></p>
+            </div>
+            <div class="company">
+              <i class="fa fa-building" style="font-size: 24px"></i>
+              <p data-company></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

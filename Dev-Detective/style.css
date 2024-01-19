@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Delicious Handrawn', cursive; */
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f8ff;
+  gap: 1.5rem;
+}
+.dark {
+  background-color: #000000;
+  color: #f6f8ff;
+}
+
+.heading p {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 40%;
+  color: rgba(134, 129, 129, 0.895);
+}
+
+.container {
+  width: 40%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 2px 2px 25px rgb(245, 242, 242);
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+}
+.container.dark {
+  background-color: rgba(69, 68, 68, 0.553);
+  box-shadow: 2px 2px 25px grey;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.search-container {
+  background-color: white;
+  box-shadow: 2px 2px 25px rgb(245, 242, 242);
+  display: flex;
+  gap: 10px;
+  width: 40%;
+  height: 7%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.search-container.dark {
+  background-color: rgba(69, 68, 68, 0.553);
+  box-shadow: 2px 2px 25px grey;
+}
+
+.search-container button {
+  all: unset;
+  background-color: rgba(74, 74, 241, 0.879);
+  color: white;
+  padding: 5px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 5px;
+  /* height: 20%; */
+  text-align: center;
+}
+
+.search-container input[data-input] {
+  all: unset;
+  width: 80%;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+img {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.name p[data-name] {
+  font-size: 1.5rem;
+}
+
+.parameters {
+  display: flex;
+  background-color: rgba(143, 139, 139, 0.831);
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.reset {
+  all: unset;
+  font-size: 1.25rem;
+  scale: 0;
+}
+.reset.active {
+  scale: 1;
+}
+
+.dark-theme {
+  all: unset;
+  cursor: pointer;
+}
+.not-visible {
+  /* display: none; */
+  /* all: unset; */
+  display: hidden;
+  opacity: 0;
+}
+
+.lignt-theme {
+  all: unset;
+  display: none;
+  /* scale: 0; */
+}
+
+.lignt-theme.active {
+  /* scale: 1; */
+  display: flex;
+  cursor: pointer;
+}

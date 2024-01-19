@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradients</title>
+    <style>
+        .box1{
+            height: 300px;
+            width: 300px;
+            border: 4px inset blue;
+            background-image: repeating-conic-gradient(blue 0deg 10deg, red 10deg 20deg);
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .box2{
+            height: 300px;
+            width: 300px;
+            border: 4px inset blue;
+            background: repeating-radial-gradient(farthest-side at 20%, #3f87a6, #ebf8e1, #f69d3c);
+            background-image:repeating-radial-gradient(white 0px 10px, black 10px 20px);
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .box3{
+            height: 300px;
+            width: 300px;
+            border: 4px inset blue;
+            background-image: repeating-linear-gradient(rgba(0,0,0,0) , red 20%),
+            repeating-linear-gradient(to left, rgba(0,0,0,0) , blue 20%);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

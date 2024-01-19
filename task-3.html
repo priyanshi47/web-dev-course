@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        margin-top: 20vh;
+        display: flex;
+        width: 450px;
+        justify-content: center;
+        height: 250px;
+        align-items: center;
+        border: 2px solid black;
+        background-color: rgb(213, 192, 232);
+      }
+      table {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form>
+        <h2>Welcome to CodeHelp</h2>
+        <table cellspacing="10">
+          <tr>
+            <td><label for="user">Username :</label></td>
+            <td><input type="text" name="user" /></td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password :</label></td>
+            <td><input type="password" name="pass" /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" value="submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
